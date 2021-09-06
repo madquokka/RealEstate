@@ -1,0 +1,85 @@
+
+<html>
+    <head>
+        <!-- CSS only -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+            <link href="style.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+            <script>
+                // document.getElementById("myVideo").playbackRate = 2;
+
+                function hidePlaceholder(){
+                  document.getElementById("search_bar").placeholder = "Find your dream home...";
+                }
+                function showPlaceholder(){
+                  document.getElementById("search_bar").placeholder = "🔎 Find your dream home...";
+                }
+            </script>
+        
+        </head>
+
+    <body>
+    <nav class="navbar sticky-top navbar-expand-lg  navbar-dark bg-dark justify-content-between">
+        <a class="navbar-brand navbar_logo" href="index.html">
+          <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          RealEstate
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="properties.html">Properties</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="agents.html">Agents</a>
+              </li>
+            </ul>
+          </div>
+
+          <button class="btn btn-primary my-2 my-sm-0 account_btn" onclick="location.href='account.html'"  type="submit">Login / Register</button>
+      </nav>
+      <!--NAVBAR FINISH-->
+
+      <!--Search Start-->
+      <div class="container search_container">
+        
+    <!-- <div class="row allign-items-center">
+        <div class="col">
+            <div class="main_heading">
+                Find your dream home...
+            </div>
+        </div>
+    </div> -->
+
+      <div class="row allign-items-center">
+        <div class="col-md-1">
+          
+        </div>
+        <div class="col">
+            <div class="input-group rounded">
+                <input type="search" id="search_bar" class="search_bar" placeholder="🔎 Find your dream home..." aria-label="Search"
+                  aria-describedby="search-addon" onfocus="hidePlaceholder()" onfocusout="showPlaceholder()"/>
+                <!-- <span class="input-group-text border-0" id="search-addon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                </span> -->
+              </div>
+        </div>
+        <div class="col-md-1">
+          
+        </div>
+      </div>
+    </div>
+
+
+      <!-- Background Video-->
+      <video autoplay muted loop id="myVideo">
+        <source src="bg_video.mp4" type="video/mp4">
+      </video>
+    </body>
+</html>

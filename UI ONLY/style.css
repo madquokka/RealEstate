@@ -1,0 +1,85 @@
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.navbar_logo {
+  margin-left: 20px;
+}
+
+.account_btn {
+  margin-right: 20px;
+}
+
+.search_container {
+  padding-top: 15%;
+}
+
+.search_bar {
+  padding: 1em;
+  width: 100%;
+  font-weight: 500;
+  font-size: 2em;
+  border-radius: 10px;
+  border-color: white;
+}
+
+.main_heading {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+
+.card_container {
+  padding: 3%;
+}
+
+.card {
+  padding: 1%;
+  margin-left: 1em;
+  margin-right: 1em;
+  height: 30%;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+.card_title {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.card_price {
+  font-weight: 300;
+}
+
+.agent_title {
+  font-weight: 700;
+  font-size: 2em;
+  text-align: center;
+}
+
+.agent_desc {
+  font-weight: 300;
+  text-align: center;
+}
+
+.mtt {
+  font-weight: 700;
+  font-size: 5em;
+  text-align: center;
+}
+img {
+  border-radius: 3px;
+}
